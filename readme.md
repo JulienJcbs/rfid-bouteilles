@@ -1,17 +1,26 @@
-Installation des Dépendances :
+# Full-Screen Image and Video Player
 
-Pygame : Assurez-vous que Pygame est installé sur Linux. Vous pouvez l'installer avec pip :
-bash
-Copier le code
-`pip install pygame`
-OpenCV : Assurez-vous également que OpenCV est installé. Vous pouvez l'installer avec pip :
-bash
-Copier le code
-`pip install opencv-python`
-Keyboard : Le module keyboard peut nécessiter des permissions root pour fonctionner sur Linux. Une alternative est d'utiliser pynput pour la gestion des événements clavier.
-Chemins de Fichiers :
+## Description
 
-Assurez-vous que les chemins de fichiers sont correctement formatés pour Linux (les barres obliques inverses \ utilisées sous Windows doivent être remplacées par des barres obliques / ou des chemins compatibles avec Linux).
-Support de la Vidéo en Pygame :
+Ce projet est une application Python qui permet d'afficher une image en plein écran et de lire des vidéos en plein écran en réponse à des événements clavier. L'application utilise les bibliothèques Pygame et OpenCV pour gérer l'affichage des images et des vidéos, et `keyboard` pour la gestion des événements clavier.
 
-Pygame n'a pas de support natif pour la lecture de vidéos. Utiliser OpenCV pour lire les frames vidéo et les afficher avec Pygame, comme dans votre code, est une approche valable et fonctionnera sur Linux.
+## Fonctionnalités
+
+- Affichage d'une image statique en plein écran.
+- Lecture de vidéos en plein écran lors de l'appui sur des touches spécifiques du clavier.
+- L'application retourne à l'affichage de l'image statique après la lecture de la vidéo.
+
+## Prérequis
+
+- Python 3.6 ou version ultérieure
+- Pygame
+- OpenCV
+- Keyboard
+
+## Installation
+
+1. Clonez ce dépôt ou téléchargez les fichiers nécessaires.
+
+   ```bash
+   git clone <URL_DU_DEPOT>
+   cd <REPERTOIRE_DU_PROJET>
